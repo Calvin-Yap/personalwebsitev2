@@ -23,7 +23,7 @@ body {
   top:1.5%;
   left: 3%;
   display:inline;
-  height: 60px;
+  height: 65px;
 }
 
 .topnav a {
@@ -122,10 +122,28 @@ background-color: transparent;
   position: relative;
   display: inline-block;
   padding-top: 0.1em;
-  padding-right: 0.05em;
   padding-bottom: 0.15em;
 }
+#subheadings{
 
+}
+
+.projectbox{
+  margin: 2% 0 2% 0%;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+  transition: all 0.2s linear;
+ 
+}
+.projectbox img{
+  width:400px;
+  height: auto;
+  padding: 20px;
+}
+.projectbox:hover{
+  transform: scale(1.1, 1.1);
+  box-shadow: 0 10px 30px 0 rgba(0, 0, 0, 0.2);
+
+}
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
@@ -192,6 +210,9 @@ background-color: transparent;
     display: inline;
     margin-left: 2%;
     color:white;
+  }
+  #subheadings{
+  text-align: center;
   }
 }
 
