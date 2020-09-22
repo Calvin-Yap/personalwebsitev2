@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Calvin Yap</title>
+    <link rel="icon" type="image/x-icon" href="/assets/favicon.ico"/>
+
+    <!-- Firebase -->
+    <script src="https://www.gstatic.com/firebasejs/3.6.6/firebase.js"></script>
+
+
+    <!-- BootStrap -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="//netdna.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="//netdna.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script async src="https://unpkg.com/typer-dot-js@0.1.0/typer.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+
+    <link rel="stylesheet" href="styles.css">
+    <script src="app.js"></script>
+  </head>
+  <body >
+    <div class="topnav" id="myTopnav">
+ 
+      <img  src="/assets/logo.png"  class="logo1" alt="logo" >
+      
+      <a href="#home" >Home</a>
+      <a href="#about">About Me</a>
+      <a href="#projects">Projects</a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+  
+    </div>
+
+    <div id="mainbox" class="container-fluid" >
+      <div class="row">
+        <div class="welcomebox" >
+          <div class="container-fluid">
+            <div class="row justify-content-center ">
+              <div class="col-xl-12 ">
+                <h1 class="main">
+                  <span class="text-wrapper">
+                    <span class="letters">Hello!</span>
+                  </span>
+                </h1>
+              </div>
+              <div class="col-10">
+                  <h1 class="typerjs">I am Calvin, I am a computer science student that loves
+                    <span class="typer" id="main" data-words="to code 💻,to build projects 🏗️, videogames 🎮, karate 🥋" data-delay="100" data-deleteDelay="2000"></span>
+                    <span class="cursor" data-owner="main"></span>
+                  </h1>
+              </div>
+            </div>
+          </div>
+    
+        </div>
+        <div id="infoGrid" class="container-fluid">
+          <div class="row justify-content-center ">
+            <div id="infolink" class="col-md-6 col-lg-4 col-xl-3">
+              <i class="fa fa-file-text" ></i>
+              <p>Resume</p>
+            </div>
+            <div id="infolink" class="col-md-6 col-lg-4 col-xl-3">
+              <i class="fa fa-paper-plane-o" ></i>
+              <a>Email: calvin.yap@ryerson.ca</a>
+              
+            </div>
+            <div  id="infolink"class="col-md-6 col-lg-4 col-xl-3">
+              <i class="fa fa-linkedin" ></i>
+              <a>LinkedIn</a>
+            </div>
+            <div id="infolink" class="col-md-6 col-lg-4 col-xl-3"> 
+              <i class="fa fa-github" ></i>
+              <a>Github</a>
+            </div>
+          </div>
+
+
+
+        </div>
+      </div>
+    </div>
+
+    <div style="margin-top: 2000px;">
+      test
+      </div>
+    <script>
+
+function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+    }
+
+
+
+    var top = $('#myTopnav').offset().top;
+  $(window).scroll(function (event) {
+    var y = $(this).scrollTop();
+	if (y >= 76) {  $('#myTopnav').addClass('bottomlipshadow'); }
+    else { $('#myTopnav').removeClass('bottomlipshadow'); }
+  });
+
+
+  $(window).scroll(function() {
+    
+    clearTimeout($.data(this, 'scrollTimer'));
+    $('#myTopnav').addClass('transparent');
+    $('#myTopnav').removeClass('bottomlipshadow');
+    $.data(this, 'scrollTimer', setTimeout(function() {
+      $('#myTopnav').removeClass('transparent');
+      $('#myTopnav').addClass('bottomlipshadow');
+    }, 300));
+});
+  
+$(document).ready(function(){$(".typerjs").hide().fadeIn(2000);});
+
+// Wrap every letter in a span
+var textWrapper = document.querySelector('.main .letters');
+textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+anime.timeline({loop: false})
+  .add({
+    targets: '.main .letter',
+    scale: [0.3,1],
+    opacity: [0,1],
+    easing: "easeOutExpo",
+    duration: 600,
+    delay: (el, i) => 70 * (i+1)
+  }).add({
+    targets: '.main .letter',
+    rotate: {
+    value: 30,
+    duration: 1250,
+    easing: 'easeInExpo'
+  }
+  }).add({
+    targets: '.main .letter',
+    rotate: {
+    value: -30,
+    duration: 1250,
+    easing: 'easeInExpo'
+  }
+  }).add({
+    targets: '.main .letter',
+    rotate: {
+    value: 0,
+    duration: 1000,
+    easing: 'easeInExpo'
+  }
+  })
+    </script>
+  </body>
+
+</html>
