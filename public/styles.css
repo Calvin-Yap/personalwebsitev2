@@ -144,6 +144,12 @@ background-color: transparent;
   box-shadow: 0 10px 30px 0 rgba(0, 0, 0, 0.2);
 
 }
+#extrabox{
+
+}
+#extrabox img{
+width: 100%;
+}
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
@@ -213,6 +219,11 @@ background-color: transparent;
   }
   #subheadings{
   text-align: center;
+  }
+  .projectbox img{
+    width:250px;
+    height: auto;
+    padding: 20px;
   }
 }
 
