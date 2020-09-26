@@ -95,9 +95,7 @@ background-color: transparent;
   margin-left: 5%;
   color:white;
 }
-#infolink:hover{
-  color:yellow;
-}
+
 
 
 .typerjs{
@@ -125,8 +123,20 @@ background-color: transparent;
   padding-bottom: 0.15em;
 }
 #subheadings{
-
+  margin-top: 2%;
+  color: black;
 }
+
+#subheadings .title{
+  font-family:'Fira Code';
+  font-size: 300%;
+  display: inline-block;
+}
+#subheadings p{
+  margin-left: 1%;
+  font-size: 300%;
+  display: inline-block;}
+
 
 .projectbox{
   margin: 2% 0 2% 0%;
@@ -145,10 +155,19 @@ background-color: transparent;
 
 }
 #extrabox{
+  position: relative;
 
+  color: white;
 }
 #extrabox img{
-width: 100%;
+width: 400px;
+
+}
+
+.extraText{
+  position: absolute;
+  bottom: 0px;
+  left: 40px;
 }
 
 /* Extra small devices (phones, 600px and down) */
@@ -192,7 +211,7 @@ width: 100%;
   }
 
   .main{
-    margin-top: 55%;
+    margin-top: 65%;
     font-size: 500%;
   }
 
@@ -202,11 +221,14 @@ width: 100%;
 
   .welcomebox{
     
-    height: 55vh;
+    height: 60vh;
+  }
+  #infoGrid{
+    height:40vh;
   }
 
   #infoGrid i{
-    margin-top:7% ;
+    margin-top:10% ;
     font-size:15px;
     color:white;
   }
@@ -224,6 +246,13 @@ width: 100%;
     width:250px;
     height: auto;
     padding: 20px;
+  }
+
+  .extraText{
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
+    font-size: 10px;
   }
 }
 
