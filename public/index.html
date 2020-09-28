@@ -21,7 +21,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
 
     <link rel="stylesheet" href="styles.css">
-    <script src="app.js"></script>
+    <script  type="text/javascript" src="config.js"></script>
+    <script type="text/javascript" src="mainscripts.js"></script>
+    <script  type="text/javascript" src="writeup.js"></script>
   </head>
   <body >
     <div class="topnav" id="myTopnav">
@@ -84,8 +86,8 @@
       </div>
     </div>
 
-    <div class="container-fluid">
-      <div class="row justify-content-center ">
+    <div class="container-fluid overflow-hidden">
+      <div class="row  justify-content-center  ">
         <div id="subheadings" class="col-10 ">
           
           <h1  class="title">Projects </h1><p>🛠</p>
@@ -100,53 +102,77 @@
             <img src="/assets/personalwebsitev1mock.jpg" alt="placeimage">
           </div>
           <div class="projectbox">
-            <img src="https://placeimg.com/640/480/animals" alt="placeimage">
-          </div>
-          <div class="projectbox">
-            <img src="https://placeimg.com/640/480/animals" alt="placeimage">
+            <img src="/assets/pokedexMock.jpg" alt="placeimage">
           </div>
         </div>
 
       </div>
       
-      <div id="extrabox" class="row justify-content-center" >
-        <div id="subheadings" class="col-10 ">
-          <h1 class="title">Class Projects </h1> <p>🛠</p>
-        </div>
-
-        <div class="col-3 ">            
-          <img src="https://placeimg.com/640/480/animals" alt="placeimage">
-          <h1 class="extraText">Java - Grocery Cart</h1>
-        </div>
-        <div class="col-3 pl-3 ">            
-          <img src="https://placeimg.com/640/480/animals" alt="placeimage">
-          <h1 class="extraText">Java - Interval Union</h1>
-        </div>
-        <div class="col-3 pl-3" >            
-          <img src="https://placeimg.com/640/480/animals" alt="placeimage">
-          <h1 class="extraText">Java - Hangman</h1>
-        </div>
-        <div class="col-3 ml-3" >            
-          <img src="https://placeimg.com/640/480/animals" alt="placeimage">
-          <h1 class="extraText">Bash - Fibonacci</h1>
-        </div>
-        <div class="col-3 ml-3" >            
-          <img src="https://placeimg.com/640/480/animals" alt="placeimage">
-          <h1 class="extraText">AngularJS - Plan Your Travel</h1>
-        </div>
-        <div class="col-3 ml-3" >            
-          <img src="https://placeimg.com/640/480/animals" alt="placeimage">
-          <h1 class="extraText">C++ - Submarine</h1>
-        </div>
-        <div class="col-5 ml-3">            
-          <img src="https://placeimg.com/640/480/animals" alt="placeimage">
-          <h1 class="extraText">RU Hacks - Tractor</h1>
-        </div>
-        <div class="col-5 ml-3" >            
-          <img src="https://placeimg.com/640/480/animals" alt="placeimage">
-          <h1 class="extraText">DeltaHacks - Food4Kids</h1>
+      <div id="extrabox" class="row justify-content-center  " >
+        <div id="subheadings" class="col-10  ">
+          <h1 class="title">Class Projects & Hackathons </h1> <p>🛠</p> <p class="help">{Click on the Dots!}</p>
         </div>
       </div>
+      <div id="extrabox" class="row justify-content-center  " >
+        <div  id="small" class="col-10  ">
+          
+            <div  class=" row justify-content-between">
+              <div class="col-2 ">            
+                <img id="extra1" src="/assets/GroceryCart.jpg" alt="placeimage">
+                <h1 class="extraText">Java - Grocery Cart</h1>
+              </div>
+              <div class="col-2  ">            
+                <img id="extra2" src="https://placeimg.com/640/480/animals" alt="placeimage">
+                <h1 class="extraText">Java - Interval Union</h1>
+              </div>
+              <div class="col-2  ">            
+                <img  id="extra3" src="https://placeimg.com/640/480/animals" alt="placeimage">
+                <h1 class="extraText">Java - Hangman</h1>
+              </div>
+              <div class="col-2  ">            
+                <img id="extra4" src="https://placeimg.com/640/480/animals" alt="placeimage">
+                <h1 class="extraText">Bash - Fibonacci</h1>
+              </div>
+  
+            </div>
+            <div  class=" row justify-content-center">
+              <div class="col-2  ">            
+                <img src="https://placeimg.com/640/480/animals" alt="placeimage">
+                <h1 class="extraText">AngularJS - Plan Your Travel</h1>
+              </div>
+              <div class="col-2 " >            
+                <img src="https://placeimg.com/640/480/animals" alt="placeimage">
+                <h1 class="extraText">C++ - Submarine</h1>
+              </div>
+              <div  class="col-2 ">            
+                <img src="https://placeimg.com/640/480/animals" alt="placeimage">
+                <h1 class="extraText">RU Hacks - Tractor</h1>
+              </div>
+              <div  class="col-2 " >            
+                <img src="https://placeimg.com/640/480/animals" alt="placeimage">
+                <h1 class="extraText">DeltaHacks - Food4Kids</h1>
+              </div>
+           </div>
+           <h1 id="back" class="back">Back<i id ="back" class="fa fa-backward"></i></h1>
+         
+          
+
+         <div id="afterClick" class="afterClickOVerlay">
+          <img id="plswork" class="overlay" src="/assets/GroceryCart.jpg">
+
+         </div>
+        </div>
+      </div>
+
+<script>
+$(document).ready(function(){
+  $(".overlay").hide();
+  $('#back').hide();
+});
+</script>
+       
+
+
     </div>
 
 
@@ -161,75 +187,16 @@
     <div style="margin-top: 2000px;">
       test
       </div>
-    <script>
 
-function myFunction() {
-      var x = document.getElementById("myTopnav");
-      if (x.className === "topnav") {
-        x.className += " responsive";
-      } else {
-        x.className = "topnav";
-      }
-    }
+      <div class="small">
+        test
+        test
+        test
+        test
+        test
+      </div>
 
 
-
-    var top = $('#myTopnav').offset().top;
-  $(window).scroll(function (event) {
-    var y = $(this).scrollTop();
-	if (y >= 76) {  $('#myTopnav').addClass('bottomlipshadow'); }
-    else { $('#myTopnav').removeClass('bottomlipshadow'); }
-  });
-
-
-  $(window).scroll(function() {
-    
-    clearTimeout($.data(this, 'scrollTimer'));
-    $('#myTopnav').addClass('transparent');
-    $('#myTopnav').removeClass('bottomlipshadow');
-    $.data(this, 'scrollTimer', setTimeout(function() {
-      $('#myTopnav').removeClass('transparent');
-      $('#myTopnav').addClass('bottomlipshadow');
-    }, 300));
-});
-  
-$(document).ready(function(){$(".typerjs").hide().fadeIn(2000);});
-
-// Wrap every letter in a span
-var textWrapper = document.querySelector('.main .letters');
-textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
-
-anime.timeline({loop: false})
-  .add({
-    targets: '.main .letter',
-    scale: [0.3,1],
-    opacity: [0,1],
-    easing: "easeOutExpo",
-    duration: 600,
-    delay: (el, i) => 70 * (i+1)
-  }).add({
-    targets: '.main .letter',
-    rotate: {
-    value: 30,
-    duration: 1250,
-    easing: 'easeInExpo'
-  }
-  }).add({
-    targets: '.main .letter',
-    rotate: {
-    value: -30,
-    duration: 1250,
-    easing: 'easeInExpo'
-  }
-  }).add({
-    targets: '.main .letter',
-    rotate: {
-    value: 0,
-    duration: 1000,
-    easing: 'easeInExpo'
-  }
-  })
-    </script>
   </body>
 
 </html>
