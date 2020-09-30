@@ -8,50 +8,81 @@ function myFunction() {
     }
 
     $(document).ready(function(){
-        var timesClicked = 0;
+
         var isOn=true;
         
         $("#small").click(function(event) {
-            console.log(event.target.id);
-            timesClicked++;
+
             if(event.target.id == "extra1" && isOn == true  ){
-                $("#small").find('img, .extraText').not('.overlay').animate({opacity: 0}, 500);
-                $("#small").addClass('big');
-                $(".overlay, #back").animate({opacity: 1}, 600);
-                $(".overlay,#back").show();
-                isOn = false;
+              myfunc();
+              $(".overlay").attr("src","/assets/GroceryCart.jpg");
+              $("#overlayTitle").text("Grocery Cart");
+              $("#overlayText").text("blah");
             }
             else if(event.target.id == "extra2"&& isOn == true  ){
-                $("#small").find('img, .extraText').not('.overlay').animate({opacity: 0}, 500);
-                $("#small").addClass('big');
-                $(".overlay, #back").animate({opacity: 1}, 600);
-                $(".overlay,#back").show();
-                isOn = false;
+              myfunc();
+              $(".overlay").attr("src","/assets/IntervalUnion.jpg");
+              $("#overlayTitle").text("Interval Union");
+              $("#overlayText").text("blah");
             }
             else if(event.target.id == "extra3" && isOn == true ){
-                $("#small").find('img, .extraText').not('.overlay').animate({opacity: 0}, 500);
-                $("#small").addClass('big');
-                $(".overlay, #back").animate({opacity: 1}, 600);
-                $(".overlay,#back").show();
-                isOn = false;
+              myfunc();
+              $(".overlay").attr("src","/assets/Hangman.jpg");
+              $("#overlayTitle").text("Hangman Algorthim");
+              $("#overlayText").text("blah");
             }
             else if(event.target.id == "extra4" && isOn == true){
-                $("#small").find('img, .extraText').not('.overlay').animate({opacity: 0}, 500);
-                $("#small").addClass('big');
-                $(".overlay, #back").animate({opacity: 1}, 600);
-                $(".overlay,#back").show();
-                isOn = false;
-            }
-            if(event.target.id == "back"){
-                $("#small").find('img, .extraText').animate({opacity: 1}, 500);
-                $(".overlay, #back").animate({opacity: 0}, 500);
-                $("#small").removeClass('big');
-                $(".overlay,#back").hide();
-                isOn = true;
-            }
-            
+              myfunc();
+              $(".overlay").attr("src","/assets/bash.jpg");
+              $("#overlayTitle").text("Fibonacci Dynamic Programing");
+              $("#overlayText").text("blah");
+            } 
+            else if(event.target.id == "extra5" && isOn == true){
+              myfunc();
+              $(".overlay").attr("src","/assets/bash.jpg");
+              $("#overlayTitle").text("Grocery Cart");
+              $("#overlayText").text("blah");
+            } 
+            else if(event.target.id == "extra6" && isOn == true){
+              myfunc();
+              $(".overlay").attr("src","/assets/bash.jpg");
+              $("#overlayTitle").text("Grocery Cart");
+              $("#overlayText").text("blah");
+            } 
+            else if(event.target.id == "extra7" && isOn == true){
+              myfunc();
+              $(".overlay").attr("src","/assets/Tracktor.jpg");
+              $("#overlayTitle").text("Tracktor");
+              $("#overlayText").text("blah");
+            } 
+            else if(event.target.id == "extra8" && isOn == true){
+              myfunc();
+              $(".overlay").attr("src","/assets/food4kids.jpg");
+              $("#overlayTitle").text("Food4Kids");
+              $("#overlayText").text("blah");
+            } 
         });
+        $("#back").click(function(){
+          $("#small").removeClass('big');
+          $("#small").find('img, .extraText').not('.overlay').animate({opacity: 1}, 500);
+          $(".overlay,#back, #overlaybox").animate({opacity: 0}, 500);
+          $(".overlay,#back, #overlaybox").hide();
+          isOn = true;
+      });
     });
+
+    function myfunc(){
+      $("#small").addClass('big');
+      $(".overlay,#back, #overlaybox").show();
+      $("#overlaybox").css({
+        'z-index' : '1'
+    });
+      $(".overlay,#back, #overlaybox").animate({opacity: 1}, 500);
+      $("#small").find('img, .extraText').not('.overlay').animate({opacity: 0}, 500);
+      isOn = false;
+    }
+
+    
 
 
   $(window).scroll(function() {

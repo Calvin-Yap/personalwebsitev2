@@ -115,58 +115,67 @@
       </div>
       <div id="extrabox" class="row justify-content-center  " >
         <div  id="small" class="col-10  ">
-          
-            <div  class=" row justify-content-between">
+          <div  id="overlaybox" class=" row">
+            <div class="col-4  ">            
+              <img id="plswork" class="overlay" src="/assets/GroceryCart.jpg">
+            </div>
+            <div class="col-8 " >            
+              <p id="overlayTitle" class="overlayTitle">TITLE</p>
+              <div style="text-align: left;">
+                <p id="overlayText" class="overlayText">TEXT</p>
+              </div>
+              
+            </div>
+          </div>
+            <div  class=" row justify-content-around">
               <div class="col-2 ">            
                 <img id="extra1" src="/assets/GroceryCart.jpg" alt="placeimage">
-                <h1 class="extraText">Java - Grocery Cart</h1>
+                <h1 id="extra1" class="extraText">Java - Grocery Cart</h1>
               </div>
               <div class="col-2  ">            
-                <img id="extra2" src="https://placeimg.com/640/480/animals" alt="placeimage">
-                <h1 class="extraText">Java - Interval Union</h1>
+                <img id="extra2" src="/assets/IntervalUnion.jpg" alt="placeimage">
+                <h1  id="extra2" class="extraText">Java - Interval Union</h1>
               </div>
               <div class="col-2  ">            
-                <img  id="extra3" src="https://placeimg.com/640/480/animals" alt="placeimage">
-                <h1 class="extraText">Java - Hangman</h1>
+                <img  id="extra3" src="/assets/Hangman.jpg" alt="placeimage">
+                <h1 id="extra3" class="extraText">Java - Hangman</h1>
               </div>
               <div class="col-2  ">            
-                <img id="extra4" src="https://placeimg.com/640/480/animals" alt="placeimage">
-                <h1 class="extraText">Bash - Fibonacci</h1>
+                <img id="extra4" src="/assets/bash.jpg" alt="placeimage">
+                <h1 id="extra4" class="extraText">Bash - Fibonacci</h1>
               </div>
   
             </div>
+          </br>
             <div  class=" row justify-content-center">
-              <div class="col-2  ">            
-                <img src="https://placeimg.com/640/480/animals" alt="placeimage">
-                <h1 class="extraText">AngularJS - Plan Your Travel</h1>
+              <div class="col-2 mr-5 ">            
+                <img id="extra5" src="https://placeimg.com/640/480/animals" alt="placeimage">
+                <h1 id="extra5" class="extraText">AngularJS - Plan Your Travel</h1>
               </div>
-              <div class="col-2 " >            
-                <img src="https://placeimg.com/640/480/animals" alt="placeimage">
-                <h1 class="extraText">C++ - Submarine</h1>
+              <div class="col-2 mr-5 " >            
+                <img id="extra6" src="https://placeimg.com/640/480/animals" alt="placeimage">
+                <h1 id="extra6" class="extraText">C++ - Submarine</h1>
               </div>
-              <div  class="col-2 ">            
-                <img src="https://placeimg.com/640/480/animals" alt="placeimage">
-                <h1 class="extraText">RU Hacks - Tractor</h1>
+              <div  class="col-2 mr-5 ">            
+                <img id="extra7" src="/assets/Tracktor.jpg" alt="placeimage">
+                <h1 id="extra7" class="extraText">RU Hacks - Tractor</h1>
               </div>
-              <div  class="col-2 " >            
-                <img src="https://placeimg.com/640/480/animals" alt="placeimage">
-                <h1 class="extraText">DeltaHacks - Food4Kids</h1>
+              <div  class="col-2 mr-5" >            
+                <img id="extra8" src="/assets/food4kids.jpg" alt="placeimage">
+                <h1 id="extra8" class="extraText">DeltaHacks - Food4Kids</h1>
               </div>
            </div>
-           <h1 id="back" class="back">Back<i id ="back" class="fa fa-backward"></i></h1>
+           <a href="#/" id="back" class="back">Back<i id ="back" class="fa fa-backward"></i></a>
          
-          
 
-         <div id="afterClick" class="afterClickOVerlay">
-          <img id="plswork" class="overlay" src="/assets/GroceryCart.jpg">
+          </div>
 
-         </div>
         </div>
       </div>
 
 <script>
 $(document).ready(function(){
-  $(".overlay").hide();
+  $(".overlay, #overlaybox").hide();
   $('#back').hide();
 });
 </script>
@@ -179,7 +188,7 @@ $(document).ready(function(){
     <div class="container-fluid">
       <div class="row justify-content-center">
         <div id="subheadings" class="col-10">
-          <h1>About Me 🙋‍♂️</h1>
+          <h1  class="title">About Me </h1><p>🙋‍♂️</p>
           <div></div>
         </div>
       </div>
