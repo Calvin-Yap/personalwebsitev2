@@ -145,21 +145,29 @@ background-color: transparent;
   display: inline-block;
 }
 
-.projectbox{
-  margin: 2% 0 2% 0%;
+#projectbox{
+  
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
   transition: all 0.2s linear;
- 
+  text-align: center;
+  margin-bottom: 2%;
 }
-.projectbox img{
-  width:350px;
-  max-height: 10%;
- 
+
+#projectbox img{
+  margin: 0 4% 0 4%;
+  width:100%; 
+  height:auto;
+  padding: 4% 0 4%;
 }
-.projectbox:hover{
+#projectbox:hover{
   transform: scale(1.1, 1.1);
   box-shadow: 0 10px 30px 0 rgba(0, 0, 0, 0.2);
 
+}
+#projectbox h1{
+  margin-top: 1%;
+  font-size:150%;
+  font-family:'Fira Code';
 }
 #extrabox{
   position: relative;
