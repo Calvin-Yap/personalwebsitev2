@@ -114,23 +114,28 @@ $(document).ready(function(){
     targets: '.main .letter',
     rotate: {
     value: 30,
-    duration: 1250,
+    duration: 1000,
     easing: 'easeInExpo'
-  }
+    }
   }).add({
     targets: '.main .letter',
     rotate: {
     value: -30,
     duration: 1250,
     easing: 'easeInExpo'
-  }
+    }
   }).add({
     targets: '.main .letter',
     rotate: {
     value: 0,
     duration: 1000,
     easing: 'easeInExpo'
-  }
+    }
+  }).add({
+    targets: '.main .letter',
+    opacity:0,
+    duration: 1000,
+    easing: 'linear'
   });
 });
 
