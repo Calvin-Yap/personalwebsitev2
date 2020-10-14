@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 @font-face {
   font-family: 'Fira Code';
   src: url(/assets/fonts/FiraCode-Regular.ttf);
@@ -133,7 +134,7 @@ background-color: transparent;
   font-size: 300%;
   display: inline-block;
 }
-#subheadings p{
+#subheadings .emoji{
   margin-left: 1%;
   font-size: 300%;
   display: inline-block;
@@ -167,8 +168,12 @@ background-color: transparent;
 #projectbox h1{
   margin-top: 1%;
   font-size:150%;
-  font-family:'Fira Code';
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  
 }
+
+
 #extrabox{
   position: relative;
 
@@ -274,6 +279,20 @@ border: dashed black 1px;
   height: 100%;
   background: #b2b6b8;
   box-shadow: 0 10px 30px 0 rgba(0, 0, 0, 0.2);
+}
+.projBody{
+  margin-left: 0%;
+  text-align: left;
+}
+.overview{
+  font-size: 100%;
+  font-family:'Fira Code';
+  font-weight: 300;
+}
+.date{
+  font-size: 80%;
+  font-family:'Fira Code';
+  font-weight: 300;
 }
 
 /* Extra small devices (phones, 600px and down) */
