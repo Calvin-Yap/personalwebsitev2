@@ -20,7 +20,9 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
 
-    <link rel="stylesheet" href="styles.css">
+    <!--<link rel="stylesheet" href="styles.css">-->
+    <link rel="stylesheet" href="main.css">
+
     <script  type="text/javascript" src="config.js"></script>
     <script type="text/javascript" src="mainscripts.js"></script>
     <script  type="text/javascript" src="writeup.js"></script>
@@ -41,27 +43,25 @@
     </div>
 
     <div id="mainbox" class="container-fluid" >
-      <div class="row">
+      
+        <div class="row justify-content-center ">
         <div id="welcomebox" class="welcomebox" >
-          <div class="container-fluid">
-            <div class="row justify-content-center ">
-              <div class="col-xl-12 ">
+              <div class="col-12 ">
                 <h1 class="main">
                   <span class="text-wrapper">
                     <span class="letters">Hello</span>
                   </span>
                 </h1>
               </div>
-              <div class="col-10">
-                  <h1 class="typerjs">I am Calvin, I am a computer science student that loves
-                    <span class="typer" id="main" data-words="to code 💻,to build projects 🏗️, videogames 🎮, karate 🥋" data-delay="100" data-deleteDelay="2000"></span>
-                    <span class="cursor" data-owner="main"></span>
-                  </h1>
-              </div>
-            </div>
-          </div>
-    
+              <!--<div class="col-12 ">
+                <h1>Hi, I'm Calvin!</h1>
+                <p>I am a 4th year Computer Science Student at Ryerson University</p>
+              </div>-->
+         </div>
+
+            
         </div>
+        <div class="row">
         <div id="infoGrid" class="container-fluid">
           <div class="row justify-content-center ">
             <div id="infolink" class="col-md-6 col-lg-3 col-xl-3 ">
@@ -91,10 +91,10 @@
         <div id="subheadings" class="col-9 ">
           <h1  class="title">Projects </h1><p class="emoji">🛠</p>
             <div id="projectbox" class="row">
-              <div class="col-3">
+              <div class="col-xl-3 col-sm-12">
                 <img src="/assets/liftmastermock.jpg" alt="placeimage">
               </div>
-              <div class="col-9">
+              <div class="col-xl-9  col-sm-12">
                   <h1>Liftmaster Pricing</h1>
                   <hr/>
                   <p class="date">March - August 2020</p>
@@ -103,18 +103,25 @@
                     
                   <ul>
                     <li></li>
-                  </ul>  
-                  <i class="fa fa-link" ></i><p>Link</p>
-                  <i class="fa fa-github" ></i><p>Github</p>
-
+                  </ul> 
+                  <a href="https://liftmaster-3d0d7.web.app/" target="_blank" rel="noopener noreferrer">
+                    <div class="projLink"> 
+                      <i class="fa fa-link" ></i><label>Link</label>
+                    </div> 
+                  </a> 
+                  <a href="https://github.com/Calvin-Yap/liftmaster-pricing" target="_blank" rel="noopener noreferrer">
+                    <div class="projLink">
+                      <i class="fa fa-github" ></i><label>Github</label>
+                    </div>
+                  </a>
                 </div>
               </div>
             </div>
             <div id="projectbox" class="row">
-              <div class="col-3">
+              <div class="col-xl-3 col-sm-12">
                 <img src="/assets/signinappmock.jpg" alt="placeimage">
               </div>
-              <div class="col-9">
+              <div class="col-xl-9  col-sm-12">
                 <h1>Lockdown Kiosk</h1>
                 <hr/>
                 <p class="date">June - September 2019</p>
@@ -123,29 +130,43 @@
                     
                   <ul>
                     <li></li>
-                  </ul>  
-                  <i class="fa fa-github" ></i><p>Github</p>
-
+                  </ul>
+                  <a href="https://liftmaster-3d0d7.web.app/" target="_blank" rel="noopener noreferrer">
+                    <div class="projLink"> 
+                      <i class="fa fa-link" ></i><label>Link to Play Store</label>
+                    </div> 
+                  </a> 
+                  <a href="https://github.com/Calvin-Yap/liftmaster-pricing" target="_blank" rel="noopener noreferrer">
+                    <div class="projLink">
+                      <i class="fa fa-github" ></i><label>Github</label>
+                    </div>
+                  </a>
                 </div>
               </div>
             </div>
             <div id="projectbox" class="row">
-              <div class="col-3">
+              <div class="col-xl-3 col-sm-12">
                 <img src="/assets/personalwebsitev1mock.jpg" alt="placeimage">
               </div>
-              <div class="col-9">
+              <div class="col-xl-9  col-sm-12">
                 <h1>Web Portfolio V1</h1>
                 <hr/>
                 <p class="date">January - August 2019</p>
                 <p class="overview">First edition of my web portfolio, developed with ReactJS and hosted with Firebase</p>
                 <div class="projBody">
-                    
                   <ul>
                     <li></li>
                   </ul>  
-                  <i class="fa fa-link" ></i><p>Link</p>
-                  <i class="fa fa-github" ></i><p>Github</p>
-
+                  <a href="https://liftmaster-3d0d7.web.app/" target="_blank" rel="noopener noreferrer">
+                    <div class="projLink"> 
+                      <i class="fa fa-link" ></i><label>Link</label>
+                    </div> 
+                  </a> 
+                  <a href="https://github.com/Calvin-Yap/liftmaster-pricing" target="_blank" rel="noopener noreferrer">
+                    <div class="projLink">
+                      <i class="fa fa-github" ></i><label>Github</label>
+                    </div>
+                  </a>
                 </div>
               </div>
             </div>
@@ -154,72 +175,60 @@
     </div>      
             
 
-
-
-
-    
-      <div id="extrabox" class="row justify-content-center  " >
-        <div id="subheadings" class="col-9  ">
+    <div class="container-fluid overflow-hidden">
+      <div class="row  justify-content-center  ">
+        <div id="subheadings" class="col-9 ">
           <h1 class="title">Class Projects & Hackathons </h1> <p class="emoji">🛠</p> <p class="help">{Click on the Dots!}</p>
-        </div>
-      </div>
-      <div id="extrabox" class="row justify-content-center  " >
-        <div  id="small" class="col-10  ">
-          <div  id="overlaybox" class=" row">
-            <div class="col-4  ">            
-              <img id="plswork" class="overlay" src="/assets/GroceryCart.jpg">
-            </div>
-            <div class="col-8 " >            
-              <p id="overlayTitle" class="overlayTitle">TITLE</p>
-              <div style="text-align: left;">
-                <p id="overlayText" class="overlayText">TEXT</p>
+          <div id="extrabox" class="row justify-content-center  " >
+            <div  id="small" class="col-10  ">
+              <div  id="overlaybox" class=" row">
+                <div class="col-4  ">            
+                  <img id="plswork" class="overlay" src="/assets/GroceryCart.jpg">
+                </div>
+                <div class="col-8 " >            
+                  <p id="overlayTitle" class="overlayTitle">TITLE</p>
+                  <div style="text-align: left;">
+                    <p id="overlayText" class="overlayText">TEXT</p>
+                    <a href="#/" id="back" class="back">Back<i id ="back" class="fa fa-backward"></i></a>
+
+                  </div>
+                </div>
+              </div>
+                <div  class=" row">
+                  <div class="col-3 ">            
+                    <img id="extra1" src="/assets/GroceryCart.jpg" alt="placeimage">
+                    <h1 id="extra1" class="extraText">Java - Grocery Cart</h1>
+                  </div>
+                  <div class="col-3  ">            
+                    <img id="extra2" src="/assets/IntervalUnion.jpg" alt="placeimage">
+                    <h1  id="extra2" class="extraText">Java - Interval Union</h1>
+                  </div>
+                  <div class="col-3  ">            
+                    <img id="extra4" src="/assets/bash.jpg" alt="placeimage">
+                    <h1 id="extra4" class="extraText">Bash - Fibonacci</h1>
+                  </div>
+                  <div class="col-3 ">            
+                    <img id="extra5" src="https://placeimg.com/640/480/animals" alt="placeimage">
+                    <h1 id="extra5" class="extraText">AngularJS - Plan Your Travel</h1>
+                  </div>
+                  <div  class="col-3 ">            
+                    <img id="extra7" src="/assets/Tracktor.jpg" alt="placeimage">
+                    <h1 id="extra7" class="extraText">RU Hacks - Tractor</h1>
+                  </div>
+                  <div  class="col-3" >            
+                    <img id="extra8" src="/assets/food4kids.jpg" alt="placeimage">
+                    <h1 id="extra8" class="extraText">DeltaHacks - Food4Kids</h1>
+                  </div>
+                </div>
               </div>
             </div>
-          </div>
-            <div  class=" row justify-content-around">
-              <div class="col-2 ">            
-                <img id="extra1" src="/assets/GroceryCart.jpg" alt="placeimage">
-                <h1 id="extra1" class="extraText">Java - Grocery Cart</h1>
-              </div>
-              <div class="col-2  ">            
-                <img id="extra2" src="/assets/IntervalUnion.jpg" alt="placeimage">
-                <h1  id="extra2" class="extraText">Java - Interval Union</h1>
-              </div>
-              <div class="col-2  ">            
-                <img  id="extra3" src="/assets/Hangman.jpg" alt="placeimage">
-                <h1 id="extra3" class="extraText">Java - Hangman</h1>
-              </div>
-              <div class="col-2  ">            
-                <img id="extra4" src="/assets/bash.jpg" alt="placeimage">
-                <h1 id="extra4" class="extraText">Bash - Fibonacci</h1>
-              </div>
-            </div>
-          </br>
-            <div  class=" row justify-content-center">
-              <div class="col-2 mr-5 ">            
-                <img id="extra5" src="https://placeimg.com/640/480/animals" alt="placeimage">
-                <h1 id="extra5" class="extraText">AngularJS - Plan Your Travel</h1>
-              </div>
-              <div class="col-2 mr-5 " >            
-                <img id="extra6" src="https://placeimg.com/640/480/animals" alt="placeimage">
-                <h1 id="extra6" class="extraText">C++ - Submarine</h1>
-              </div>
-              <div  class="col-2 mr-5 ">            
-                <img id="extra7" src="/assets/Tracktor.jpg" alt="placeimage">
-                <h1 id="extra7" class="extraText">RU Hacks - Tractor</h1>
-              </div>
-              <div  class="col-2 mr-5" >            
-                <img id="extra8" src="/assets/food4kids.jpg" alt="placeimage">
-                <h1 id="extra8" class="extraText">DeltaHacks - Food4Kids</h1>
-              </div>
-           </div>
-           <a href="#/" id="back" class="back">Back<i id ="back" class="fa fa-backward"></i></a>
          
-
-          </div>
-
-        </div>
+           
+        </div>      
       </div>
+    </div>    
+
+
 
 <script>
 $(document).ready(function(){
@@ -228,18 +237,46 @@ $(document).ready(function(){
 });
 </script>
        
-
-
-    </div>
-
-
     <div class="container-fluid">
       <div class="row justify-content-center">
-        <div id="subheadings" class="col-9">
-          <h1  class="title">About Me </h1><p class="emoji">🙋‍♂️</p>
-          <div></div>
+      <div class="col-9">
+
+          <div id="subheadings">
+            <h1  class="title">About Me </h1><p class="emoji">🙋‍♂️</p>
+              <div class="col-12">
+                <h1 class="typerjs">I am Calvin, I am a computer science student that loves
+                  <span class="typer" id="main" data-words="to code 💻,to build projects 🏗️, videogames 🎮, karate 🥋" data-delay="100" data-deleteDelay="2000"></span>
+                  <span class="cursor" data-owner="main"></span>
+                </h1>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-4">
+              <div class="slider">
+                <div class="slider-outer">
+                  <!--<img src="assets/arrow.png" class="prev" alt="Prev">-->
+                  <h1 class="prev">prev</h1>
+                  <div class="slider-inner">
+                    <img src="assets/1.jpg" id="first" class="active" alt="main">
+                    <img src="assets/2.jpg" alt="main">
+                    <img src="assets/3.jpg" alt="main">
+                    <img src="assets/4.jpg" id ="last" alt="main">
+                  </div>
+                  <h1 class="next">next</h1>
+                  <!--<img src="assets/arrow.png" class="next" alt="Next">-->
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+
       </div>
+
+
+
+      
+        
+
     </div>
     <div style="margin-top: 2000px;">
       test
@@ -252,6 +289,8 @@ $(document).ready(function(){
         test
         test
       </div>
+
+
 
 
   </body>

@@ -55,11 +55,12 @@ body {
 }
 
 .main{
-font-family:'Fira Code';
-margin-top: 5%;
-font-size: 2000%;
-text-align: center;
-}
+  font-family:'Fira Code';
+  margin-top: 5%;
+  font-size: 2000%;
+  text-align: center;
+  }
+
 .welcomebox{
 height: 75vh;
 
@@ -265,7 +266,6 @@ border: dashed black 1px;
     right: 20px;
     z-index: 1;
     opacity: 0;
-    
 }
 .back:hover{
   text-decoration: none;
@@ -295,6 +295,15 @@ border: dashed black 1px;
   font-weight: 300;
 }
 
+#morph{
+  width: 100%;
+  height: 100%;
+  top:0;
+  left:0;
+  position: absolute;
+  pointer-events: none;
+  z-index: 0;
+}
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
   .topnav a{display: none;}
