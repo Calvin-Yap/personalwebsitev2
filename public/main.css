@@ -70,6 +70,7 @@ body {
 }
 
 .welcomebox {
+  background-color: #eddcd2;
   height: 75vh;
   width: 100%;
 }
@@ -91,6 +92,83 @@ body {
   display: inline-block;
   padding-top: 0.1em;
   padding-bottom: 0.15em;
+}
+
+.welcomebox .school {
+  color: white;
+  background-color: #004c9b;
+  padding: 0.25%;
+  -webkit-box-shadow: 8px -8px 0px 0px #ffdc00;
+          box-shadow: 8px -8px 0px 0px #ffdc00;
+}
+
+.welcomebox .bioBox {
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-55%, -50%);
+          transform: translate(-55%, -50%);
+  width: 40%;
+}
+
+.welcomebox .bioBox .bio {
+  font-family: 'Fira Code';
+  font-size: 400%;
+  text-align: left;
+}
+
+.welcomebox .bioBox .bioText {
+  font-family: 'Roboto', sans-serif;
+  font-size: 150%;
+}
+
+.welcomebox .bioBox button {
+  font-family: 'Roboto', sans-serif;
+  display: inline-block;
+  padding: 0.35em 1.2em;
+  border: 0.1em solid #FFFFFF;
+  margin: 0 0.3em 0.3em 0;
+  border-radius: 0.12em;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-decoration: none;
+  font-family: 'Roboto',sans-serif;
+  font-weight: 300;
+  color: black;
+  text-align: center;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.welcomebox .bioBox button:hover {
+  color: #000000;
+  background-color: #FFFFFF;
+}
+
+.welcomebox .bitmoji {
+  position: absolute;
+  opacity: 0;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(175%, -50%);
+          transform: translate(175%, -50%);
+  width: 10%;
+}
+
+.subLetters {
+  font-size: 250%;
+  text-align: center;
+  font-family: 'Fira Code';
+}
+
+svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  width: 100%;
+  height: 75vh;
 }
 
 #infoGrid {
@@ -432,6 +510,27 @@ body {
   .welcomebox .main {
     margin-top: 60%;
     font-size: 500%;
+  }
+  .welcomebox .bioBox {
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    width: 80%;
+  }
+  .welcomebox .bioBox .bio {
+    font-size: 200%;
+  }
+  .welcomebox .bioBox .school {
+    -webkit-box-shadow: 4px -4px 0px 0px #ffdc00;
+            box-shadow: 4px -4px 0px 0px #ffdc00;
+  }
+  .welcomebox .bioBox .bioText {
+    font-size: 80%;
+  }
+  .welcomebox .bitmoji {
+    display: none;
+  }
+  svg {
+    height: 60vh;
   }
   #infoGrid {
     height: 40vh;

@@ -102,7 +102,8 @@ $(document).ready(function(){$(".typerjs").hide().fadeIn(2000);});
 $(document).ready(function(){
     var textWrapper = document.querySelector('.main .letters');
     textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
-    anime.timeline({loop: false})
+
+    var animation = anime.timeline({loop: false})
   .add({
     targets: '.main .letter',
     scale: [0.3,1],
@@ -111,32 +112,54 @@ $(document).ready(function(){
     duration: 600,
     delay: (el, i) => 70 * (i+1)
   }).add({
+    targets:'.subLetters',
+    opacity: [0,1],
+    easing: 'easeOutExpo',
+    duration:600
+  }).add({
     targets: '.main .letter',
     rotate: {
     value: 30,
-    duration: 1000,
+    duration: 800,
     easing: 'easeInExpo'
     }
   }).add({
     targets: '.main .letter',
     rotate: {
     value: -30,
-    duration: 1250,
+    duration: 800,
     easing: 'easeInExpo'
     }
   }).add({
     targets: '.main .letter',
     rotate: {
     value: 0,
-    duration: 1000,
+    duration: 800,
     easing: 'easeInExpo'
     }
   }).add({
-    targets: '.main .letter',
+    targets: ['.main .letter', '.subLetters'],
+    delay:300,
     opacity:0,
-    duration: 1000,
+    duration: 500,
     easing: 'linear'
+  }).add({
+    targets: '.polyMorph',
+    points: [
+      { value: '1920.5,1080 0.5,1080 0.5,0 373.4,0 523,774' },
+      { value: '1920.5,1080 0.5,1080 0.5,0 0,1 523,774' }
+    ],
+    easing: 'easeOutQuad',
+    duration: 1250,
+    loop: false,
+    delay:100,
+  }).add({
+    targets: [".bioBox", ".bitmoji" ],
+    opacity: [0,1],
+    duration: 500
   });
+  document.querySelector('#restart').onclick = animation.restart;
+
 });
 
 $(document).ready(function(){
