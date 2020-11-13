@@ -7,80 +7,7 @@ function myFunction() {
       }
     }
 
-    $(document).ready(function(){
 
-        var isOn=true;
-        
-        $("#small").click(function(event) {
-
-            if(event.target.id == "extra1" && isOn == true  ){
-              myfunc();
-              $(".overlay").attr("src","/assets/GroceryCart.jpg");
-              $("#overlayTitle").text("Grocery Cart");
-              $("#overlayText").text("blah");
-            }
-            else if(event.target.id == "extra2"&& isOn == true  ){
-              myfunc();
-              $(".overlay").attr("src","/assets/IntervalUnion.jpg");
-              $("#overlayTitle").text("Interval Union");
-              $("#overlayText").text("blah");
-            }
-            else if(event.target.id == "extra3" && isOn == true ){
-              myfunc();
-              $(".overlay").attr("src","/assets/Hangman.jpg");
-              $("#overlayTitle").text("Hangman Algorthim");
-              $("#overlayText").text("blah");
-            }
-            else if(event.target.id == "extra4" && isOn == true){
-              myfunc();
-              $(".overlay").attr("src","/assets/bash.jpg");
-              $("#overlayTitle").text("Fibonacci Dynamic Programing");
-              $("#overlayText").text("blah");
-            } 
-            else if(event.target.id == "extra5" && isOn == true){
-              myfunc();
-              $(".overlay").attr("src","/assets/bash.jpg");
-              $("#overlayTitle").text("Grocery Cart");
-              $("#overlayText").text("blah");
-            } 
-            else if(event.target.id == "extra6" && isOn == true){
-              myfunc();
-              $(".overlay").attr("src","/assets/bash.jpg");
-              $("#overlayTitle").text("Grocery Cart");
-              $("#overlayText").text("blah");
-            } 
-            else if(event.target.id == "extra7" && isOn == true){
-              myfunc();
-              $(".overlay").attr("src","/assets/Tracktor.jpg");
-              $("#overlayTitle").text("Tracktor");
-              $("#overlayText").text("blah");
-            } 
-            else if(event.target.id == "extra8" && isOn == true){
-              myfunc();
-              $(".overlay").attr("src","/assets/food4kids.jpg");
-              $("#overlayTitle").text("Food4Kids");
-              $("#overlayText").text("blah");
-            } 
-        });
-        $("#back").click(function(){
-          $("#small").removeClass('big');
-          $("#small").find('img, .extraText').not('.overlay').animate({opacity: 1}, 500);
-          $(".overlay,#back, #overlaybox").animate({opacity: 0}, 500);
-          $(".overlay,#back, #overlaybox").hide();
-          isOn = true;
-      });
-    });
-
-    function myfunc(){
-      $("#small").addClass('big');
-      $(".overlay,#back, #overlaybox").show();
-      $("#overlaybox").css({
-        'z-index' : '1'
-    });
-      $(".overlay,#back, #overlaybox").animate({opacity: 1}, 500);
-      $("#small").find('img, .extraText').not('.overlay').animate({opacity: 0}, 500);
-      isOn = false;
-    }
 
     
 
@@ -188,4 +115,40 @@ $(document).ready(function(){
   });
 })
 
+$(document).ready(function(){
+  let services = document.querySelectorAll('.projectbox');
 
+  services.forEach((service) => {
+    var counter = 0;
+    service.addEventListener('click', (event) => {
+      anime.remove(service.querySelector('.arrow'));
+      if(counter ==0 ||counter%2 ==1){
+
+        counter++;
+        service.querySelector('i').style.display = 'none';
+
+        anime({
+          targets: service.querySelector('.arrow'),
+          easing: 'easeOutExpo',
+          scale: 50,
+          duration: 2000,
+       });
+      }else{
+        counter++;
+        service.querySelector('i').style.display = 'inline';
+        anime({
+          targets: service.querySelector('.arrow'),
+          easing: 'easeOutExpo',
+          scale: 1,
+          duration: 600,
+       })
+      }
+
+
+    });
+
+   
+  });
+
+    
+})

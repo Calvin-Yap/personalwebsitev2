@@ -15,8 +15,7 @@
     <script src="//netdna.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
     <link rel="stylesheet" type="text/css" href="//netdna.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script async src="https://unpkg.com/typer-dot-js@0.1.0/typer.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">    <script async src="https://unpkg.com/typer-dot-js@0.1.0/typer.js"></script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
 
@@ -29,9 +28,15 @@
   </head>
   <body >
     <div class="topnav" id="myTopnav">
- 
-      <img  src="/assets/logo.png"  class="logo1" alt="logo" >
       
+      <img  src="/assets/logo.png"  class="logo1" alt="logo" >
+      <h1 class="textlogo">CALVIN YAP</h1>
+      <div class="links">
+        <i class="fa fa-file-o"></i> 
+        <i class="fa fa-linkedin" ></i>
+        <i class="fa fa-paper-plane-o" ></i>
+        <i class="fa fa-github" ></i>
+      </div>
       <a href="#home" >Home</a>
       <a href="#projects">Projects</a>
       <a href="#about">About Me</a>
@@ -101,34 +106,34 @@
         <div id="subheadings" class="col-9 ">
           <h1  class="title">Projects </h1><p class="emoji">🛠</p>
             <div id="projectbox" class="row">
-              <div class="col-xl-3 col-sm-12">
+              <div class="col-xl-3 col-lg-12 col-md-12 col-sm-12">
                 <img src="/assets/liftmastermock.jpg" alt="placeimage">
               </div>
-              <div class="col-xl-9  col-sm-12">
+              <div class="col-xl-9  col-lg-12 col-md-12 col-sm-12">
                   <h1>Liftmaster Pricing</h1>
                   <hr/>
                   <p class="date">March - August 2020</p>
                   <p class="overview">Pricing calculator app designed for LiftMaster garage systems and accessories</p>
                   <div class="projBody">
-                    
                   <ul>
-                    <li></li>
+                    <li>A pricing tool designed for LiftMaster Garage systems, it is commerically used by the sales team to quickly quote pricing for customers.</li>
+                    <li>Recalls data from local PHP files and displays it nicely in the mobile optimized user interface.</li>
+                    <li>App usage optimizes the quoting process by 80%, over the previous excel document format. </li>
+                    <li>Built using AngularJS directives, and hosted using firebase.</li>
                   </ul> 
-                  <a href="https://liftmaster-3d0d7.web.app/" target="_blank" rel="noopener noreferrer">
                     <div class="projLink"> 
-                      <i class="fa fa-link" ></i><label>Link</label>
+                      <a href="https://liftmaster-3d0d7.web.app/" target="_blank" rel="noopener noreferrer">
+                      <i class="fa fa-link" ></i><label>Link</label></a> 
                     </div> 
-                  </a> 
-                  <a href="https://github.com/Calvin-Yap/liftmaster-pricing" target="_blank" rel="noopener noreferrer">
                     <div class="projLink">
-                      <i class="fa fa-github" ></i><label>Github</label>
+                    <a href="https://github.com/Calvin-Yap/liftmaster-pricing" target="_blank" rel="noopener noreferrer">
+                      <i class="fa fa-github" ></i><label>Github</label></a>
                     </div>
-                  </a>
                 </div>
               </div>
             </div>
             <div id="projectbox" class="row">
-              <div class="col-xl-3 col-sm-12">
+              <div class="col-xl-3 col-lg-12 col-md-12 col-sm-12">
                 <img src="/assets/signinappmock.jpg" alt="placeimage">
               </div>
               <div class="col-xl-9  col-sm-12">
@@ -139,18 +144,19 @@
                 <div class="projBody">
                     
                   <ul>
-                    <li></li>
+                    <li>A multi-purpose kiosk style app that allows users to lockdown a device to a single registration webpage. </li>
+                    <li>Developed for Northern Karate Schools to allow for peace of mind and restricted tablet access when students are registering for classes.</li>
+                    <li>Developed in Java using Android Studios and is published to the Google Play Store with 10+ downloads.</li>
                   </ul>
-                  <a href="https://liftmaster-3d0d7.web.app/" target="_blank" rel="noopener noreferrer">
                     <div class="projLink"> 
-                      <i class="fa fa-link" ></i><label>Link to Play Store</label>
-                    </div> 
-                  </a> 
-                  <a href="https://github.com/Calvin-Yap/liftmaster-pricing" target="_blank" rel="noopener noreferrer">
-                    <div class="projLink">
-                      <i class="fa fa-github" ></i><label>Github</label>
+                      <a href="https://play.google.com/store/apps/details?id=io.example.finishedapp" target="_blank" rel="noopener noreferrer">
+                      <i class="fa fa-link" ></i><label>Link to Play Store</label></a> 
                     </div>
-                  </a>
+                    <div class="projLink"> 
+                      <a href="https://github.com/Calvin-Yap/liftmaster-pricing" target="_blank" rel="noopener noreferrer">
+                      <i class="fa fa-github" ></i><label>Github</label> </a>
+                    </div>
+
                 </div>
               </div>
             </div>
@@ -165,15 +171,17 @@
                 <p class="overview">First edition of my web portfolio, developed with ReactJS and hosted with Firebase</p>
                 <div class="projBody">
                   <ul>
-                    <li></li>
+                    <li >My first edition of my web portfolio, it showcases more about myself and my previous projects.</li>
+                    <li >Utilized React's <bold>JSK syntax extension, routing,</bold> and <bold>state management</bold> to optimize construction and user interface.</li>
                   </ul>  
-                  <a href="https://liftmaster-3d0d7.web.app/" target="_blank" rel="noopener noreferrer">
                     <div class="projLink"> 
+                      <a href="https://liftmaster-3d0d7.web.app/" target="_blank" rel="noopener noreferrer">
                       <i class="fa fa-link" ></i><label>Link</label>
                     </div> 
                   </a> 
-                  <a href="https://github.com/Calvin-Yap/liftmaster-pricing" target="_blank" rel="noopener noreferrer">
                     <div class="projLink">
+                      <a href="https://github.com/Calvin-Yap/liftmaster-pricing" target="_blank" rel="noopener noreferrer">
+
                       <i class="fa fa-github" ></i><label>Github</label>
                     </div>
                   </a>
@@ -183,61 +191,54 @@
         </div>      
       </div>
     </div>      
-            
-
-    <div class="container-fluid overflow-hidden">
-      <div class="row  justify-content-center  ">
-        <div id="subheadings" class="col-9 ">
-          <h1 class="title">Class Projects & Hackathons </h1> <p class="emoji">🛠</p> <p class="help">{Click on the Dots!}</p>
-          <div id="extrabox" class="row justify-content-center  " >
-            <div  id="small" class="col-10  ">
-              <div  id="overlaybox" class=" row">
-                <div class="col-4  ">            
-                  <img id="plswork" class="overlay" src="/assets/GroceryCart.jpg">
-                </div>
-                <div class="col-8 " >            
-                  <p id="overlayTitle" class="overlayTitle">TITLE</p>
-                  <div style="text-align: left;">
-                    <p id="overlayText" class="overlayText">TEXT</p>
-                    <a href="#/" id="back" class="back">Back<i id ="back" class="fa fa-backward"></i></a>
-
-                  </div>
+    
+    <div class="extraproj">
+      <div class="container-fluid overflow-hidden">
+        <div class="row  justify-content-center  ">
+          <div id="subheadings" class="col-9 ">
+            <h1 class="title">Class Projects & Hackathons </h1> <p class="emoji">🛠</p> <p class="help">{Click on the Dots!}</p>
+            <div class="row justify-content-center">
+              <div class="col-xl-3 col-lg-12 col-md-12 col-sm-12">
+                <div class="projectbox">
+                  <img class="extraImg" src="assets/GroceryCart.jpg" alt="GroceryCart.java">
+                   <div class="arrow" id="arrow-one"><i  class="fa fa-plus"></i></i></div>
                 </div>
               </div>
-                <div  class=" row">
-                  <div class="col-3 ">            
-                    <img id="extra1" src="/assets/GroceryCart.jpg" alt="placeimage">
-                    <h1 id="extra1" class="extraText">Java - Grocery Cart</h1>
-                  </div>
-                  <div class="col-3  ">            
-                    <img id="extra2" src="/assets/IntervalUnion.jpg" alt="placeimage">
-                    <h1  id="extra2" class="extraText">Java - Interval Union</h1>
-                  </div>
-                  <div class="col-3  ">            
-                    <img id="extra4" src="/assets/bash.jpg" alt="placeimage">
-                    <h1 id="extra4" class="extraText">Bash - Fibonacci</h1>
-                  </div>
-                  <div class="col-3 ">            
-                    <img id="extra5" src="https://placeimg.com/640/480/animals" alt="placeimage">
-                    <h1 id="extra5" class="extraText">AngularJS - Plan Your Travel</h1>
-                  </div>
-                  <div  class="col-3 ">            
-                    <img id="extra7" src="/assets/Tracktor.jpg" alt="placeimage">
-                    <h1 id="extra7" class="extraText">RU Hacks - Tractor</h1>
-                  </div>
-                  <div  class="col-3" >            
-                    <img id="extra8" src="/assets/food4kids.jpg" alt="placeimage">
-                    <h1 id="extra8" class="extraText">DeltaHacks - Food4Kids</h1>
-                  </div>
+              <div class="col-xl-3  col-lg-12 col-md-12 col-sm-12">
+                <div class="projectbox">
+                  <img class="extraImg" src="assets/bash.jpg" alt="bash.script">
+                  <div class="arrow" id="arrow-one"><i  id="icon" class="fa fa-plus"></i></i></div>
                 </div>
               </div>
-            </div>
-         
-           
-        </div>      
-      </div>
-    </div>    
-
+              <div class="col-xl-3  col-lg-12 col-md-12 col-sm-12">
+                <div class="projectbox">
+                  <img class="extraImg" src="assets/IntervalUnion.jpg" alt="IntervalUnion.java">
+                  <div class="arrow" id="arrow-one"><i  id="icon" class="fa fa-plus"></i></i></div>
+                </div>
+              </div>
+              <div class="col-xl-3  col-lg-12 col-md-12 col-sm-12">
+                <div class="projectbox">
+                  <img class="extraImg" src="assets/Tracktor.jpg" alt="Tracktor.webdev">
+                  <div class="arrow" id="arrow-one"><i  id="icon" class="fa fa-plus"></i></i></div>
+                </div>
+              </div>
+              <div class="col-xl-3  col-lg-12 col-md-12 col-sm-12">
+                <div class="projectbox">
+                  <img class="extraImg" src="assets/food4kids.jpg" alt="book">
+                  <div class="arrow" id="arrow-one"><i  id="icon"class="fa fa-plus"></i></i></div>
+                </div>
+              </div>
+              <div class="col-xl-3  col-lg-12 col-md-12 col-sm-12">
+                <div class="projectbox">
+                  <img class="extraImg" src="https://placeimg.com/640/480/animals" alt="book">
+                  <div class="arrow" id="arrow-one"><i   id="icon" class="fa fa-plus"></i></i></div>
+                </div>
+              </div>
+          </div>  
+          </div>      
+        </div>
+      </div>    
+    </div>
 
 
 <script>
