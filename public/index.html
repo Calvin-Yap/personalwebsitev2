@@ -7,24 +7,25 @@
     <link rel="icon" type="image/x-icon" href="/assets/favicon.ico"/>
 
     <!-- Firebase -->
-    <script src="https://www.gstatic.com/firebasejs/3.6.6/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/3.6.6/firebase.js" ></script>
 
 
     <!-- BootStrap -->
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="//netdna.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" ></script>
+    <script src="//netdna.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" ></script>
     <link rel="stylesheet" type="text/css" href="//netdna.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">    <script async src="https://unpkg.com/typer-dot-js@0.1.0/typer.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">    
+    <script async src="https://unpkg.com/typer-dot-js@0.1.0/typer.js"></script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
 
     <!--<link rel="stylesheet" href="styles.css">-->
-    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="main.css?v=10">
 
-    <script  type="text/javascript" src="config.js"></script>
-    <script type="text/javascript" src="mainscripts.js"></script>
-    <script  type="text/javascript" src="writeup.js"></script>
+    <script  type="text/javascript" src="config.js?v=2" ></script>
+    <script type="text/javascript" src="mainscripts.js?v=4" ></script>
+    <script src="jquery.fittext.js" ></script>
   </head>
   <body >
     <div class="topnav" id="myTopnav">
@@ -32,94 +33,96 @@
       <img  src="/assets/logo.png"  class="logo1" alt="logo" >
       <h1 class="textlogo">CALVIN YAP</h1>
       <div class="links">
-        <i class="fa fa-file-o"></i> 
-        <i class="fa fa-linkedin" ></i>
-        <i class="fa fa-paper-plane-o" ></i>
-        <i class="fa fa-github" ></i>
+        <a href="assets/CalvinYapResume2020.pdf" target="blank" rel="noopener noreferrer"><i class="fa fa-file-o"></i></a> 
+        <a href="mailto:calvin.gh.yap@rgmail.com"><i class="fa fa-paper-plane-o" ></i></a>
+        <a href="https://www.linkedin.com/in/calvin-yap-b83275193/" target="_blank" rel="noopener noreferrer"> <i class="fa fa-linkedin" ></i></a>
+        <a href="https://github.com/Calvin-Yap" target="_blank" rel="noopener noreferrer"> <i class="fa fa-github" ></i></a>
       </div>
-      <a href="#home" >Home</a>
-      <a href="#projects">Projects</a>
-      <a href="#about">About Me</a>
+      <a class="toggle" id="home" >Home</a>
+      <a  class="toggle" id="projects">Projects</a>
+      <a class="toggle"  id="about">About Me</a>
       
       <a href="javascript:void(0);" class="icon" onclick="myFunction()">
         <i class="fa fa-bars"></i>
       </a>
   
     </div>
-    <svg  viewBox="0 0 1920 1080" preserveAspectRatio="none" >
+    <svg class="polysvg" viewBox="0 0 1920 1080" preserveAspectRatio="none" >
       <polygon class="polyMorph" points="1920.5,1080 0.5,1080 0.5,0 373.4,0 1920.5,0" fill="white"/>
     </svg>
-    <div id="mainbox" class="container-fluid" >
 
+      <div id="welcomebox" class="container-fluid" >
         <div class="row justify-content-center ">
-
-        <div id="welcomebox" class="welcomebox" >
-              <div class="col-12 ">
-
-                <h1 class="main">
-                  <span class="text-wrapper">
-                    <span class="letters">Hello</span>
-                  </span>
-                </h1>
-                <h1 class="subLetters">Welcome to my Portfolio!</h1>
-                <div class="bioBox">
-                  <h1 class="bio">Hi, I'm Calvin!</h1>
-                  <p class="bioText">I am a 4th year Computer Science Student at <span class="school">Ryerson University</span><br/>Feel free to browse around my projects and learn more about me. <br/> I am currently looking for a <span style="font-weight: bold;">2021 Winter internship </span>. </p>
-                  <button id="restart">Replay Intro</button>
+          <div id="bigText" class="col-12">
+            <h1 class="main">
+              <span class="text-wrapper">
+                <span class="letters">Hello</span>
+              </span>
+            </h1>
+            <h1 class="subLetters">Welcome to my Portfolio!</h1>
+          </div>
+            <div id="biomove" >
+              <div class="row justify-content-center ">
+                <div class="col-xl-8 col-lg-8 col-md-8 col-sm-12 col-12">
+                  <div class="bioBox">
+                    <h1 class="bio">Hi, I'm Calvin!</h1>
+                    <p class="bioText">I am a 4th year Computer Science Student at <span class="school">Ryerson University</span><br/>Feel free to browse around my projects and learn more about me. <br/> I am currently looking for a <span style="font-weight: bold;">2021 Summer internship or Full-time Position </span>. </p>
+                    <button id="restart">Replay Intro</button>
+                  </div>
                 </div>
-                <img class="bitmoji" src="assets/bitmoji.png" alt="bitmoji">
+                <div id="bitmojibox" class="col-xl-2 col-lg-3 col-md-3 col-sm-0 col-0">
+                  <img class="bitmoji" src="assets/bitmoji.png" alt="bitmoji">
+                </div>
               </div>
-
-                
-
-         </div>
-
-            
-        </div>
-        <div class="row">
-        <div id="infoGrid">
-          <div class="row justify-content-center ">
-            <div id="infolink" class="col-md-6 col-lg-3 col-xl-3 ">
-              <i class="fa fa-file-text" ></i>
-              <a href={Resume} target="blank" rel="noopener noreferrer" >Resume</a>
-            </div>
-            <div id="infolink" class="col-md-6 col-lg-3 col-xl-3">
-              <i class="fa fa-paper-plane-o" ></i>
-              <a href="mailto:calvin.yap@ryerson.ca">Email</a>
-              
-            </div>
-            <div  id="infolink"class="col-md-6 col-lg-3 col-xl-3 ">
-              <i class="fa fa-linkedin" ></i>
-              <a href="https://www.linkedin.com/in/calvin-yap-b83275193/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-            </div>
-            <div id="infolink" class="col-md-6 col-lg-3 col-xl-3"> 
-              <i class="fa fa-github" ></i>
-              <a href="https://github.com/Calvin-Yap" target="_blank" rel="noopener noreferrer">Github</a>
-            </div>
+              </div>
           </div>
         </div>
-      </div>
-    </div>
 
-    <div class="container-fluid overflow-hidden">
+        <div class="container-fluid">
+          <div class="row justify-content-center" >
+            <div id="infolink" class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-3">
+
+              <a href="assets/CalvinYapResume2020.pdf" target="blank" rel="noopener noreferrer" >Resume</a>
+              <i class="fa fa-file-text" ></i>
+            </div>
+            <div id="infolink" class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-3">
+
+              <a href="mailto:calvin.gh.yap@rgmail.com">Email</a>
+              <i class="fa fa-paper-plane-o" ></i>
+            </div>
+            <div  id="infolink"class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-3">              
+              <a href="https://www.linkedin.com/in/calvin-yap-b83275193/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+              <i class="fa fa-linkedin" ></i>
+            </div>
+            <div id="infolink" class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-3 "> 
+              
+              <a href="https://github.com/Calvin-Yap" target="_blank" rel="noopener noreferrer">Github</a>
+              <i class="fa fa-github" ></i>
+            </div>
+        </div>
+        </div>
+
+    
+    <div id="projectscroll"></div>
+    <div id="mainprojects" class="container-fluid overflow-hidden">
       <div class="row  justify-content-center  ">
         <div id="subheadings" class="col-9 ">
           <h1  class="title">Projects </h1><p class="emoji">🛠</p>
             <div id="projectbox" class="row">
-              <div class="col-xl-3 col-lg-12 col-md-12 col-sm-12">
+              <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12">
                 <img src="/assets/liftmastermock.jpg" alt="placeimage">
               </div>
-              <div class="col-xl-9  col-lg-12 col-md-12 col-sm-12">
+              <div class="col-xl-9  col-lg-9 col-md-9 col-sm-12">
                   <h1>Liftmaster Pricing</h1>
                   <hr/>
                   <p class="date">March - August 2020</p>
                   <p class="overview">Pricing calculator app designed for LiftMaster garage systems and accessories</p>
                   <div class="projBody">
                   <ul>
-                    <li>A pricing tool designed for LiftMaster Garage systems, it is commerically used by the sales team to quickly quote pricing for customers.</li>
-                    <li>Recalls data from local PHP files and displays it nicely in the mobile optimized user interface.</li>
-                    <li>App usage optimizes the quoting process by 80%, over the previous excel document format. </li>
-                    <li>Built using AngularJS directives, and hosted using firebase.</li>
+                    <li>Developed a pricing tool for LiftMaster Garage Systems (~25 daily users) to replace the dated Excel approach improving the quoting process by 80%.</li>
+                    <li>Built using AngularJS to take advantage of its 2-way data binding, along with the built in HTTP service to allow for efficient access to local PHP files.</li>
+                    <li>Hosted using Firebase for its simplicity in collecting daily user counts and crash analytics. Looking to add Firebase Authentication in the future for better admin controls. </li>
+
                   </ul> 
                     <div class="projLink"> 
                       <a href="https://liftmaster-3d0d7.web.app/" target="_blank" rel="noopener noreferrer">
@@ -133,10 +136,10 @@
               </div>
             </div>
             <div id="projectbox" class="row">
-              <div class="col-xl-3 col-lg-12 col-md-12 col-sm-12">
+              <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12">
                 <img src="/assets/signinappmock.jpg" alt="placeimage">
               </div>
-              <div class="col-xl-9  col-sm-12">
+              <div class="col-xl-9  col-lg-9 col-md-9 col-sm-12">
                 <h1>Lockdown Kiosk</h1>
                 <hr/>
                 <p class="date">June - September 2019</p>
@@ -144,9 +147,9 @@
                 <div class="projBody">
                     
                   <ul>
-                    <li>A multi-purpose kiosk style app that allows users to lockdown a device to a single registration webpage. </li>
-                    <li>Developed for Northern Karate Schools to allow for peace of mind and restricted tablet access when students are registering for classes.</li>
-                    <li>Developed in Java using Android Studios and is published to the Google Play Store with 10+ downloads.</li>
+                    <li>A lockdown browser inspired app, developed for Northern Karate (~200+ daily users) to enhance the previous sign-in system, which lacked any forms of security. </li>
+                    <li>Developed in Java using the Android SDK environment. It is a WebView component layered with hidden buttons restricting access to a just webpage of the owner’s choice.</li>
+                    <li>Currently boasts 10+ downloads on the Google Play Store.</li>
                   </ul>
                     <div class="projLink"> 
                       <a href="https://play.google.com/store/apps/details?id=io.example.finishedapp" target="_blank" rel="noopener noreferrer">
@@ -161,10 +164,10 @@
               </div>
             </div>
             <div id="projectbox" class="row">
-              <div class="col-xl-3 col-sm-12">
+              <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12">
                 <img src="/assets/personalwebsitev1mock.jpg" alt="placeimage">
               </div>
-              <div class="col-xl-9  col-sm-12">
+              <div class="col-xl-9  col-lg-9 col-md-9 col-sm-12">
                 <h1>Web Portfolio V1</h1>
                 <hr/>
                 <p class="date">January - August 2019</p>
@@ -175,14 +178,17 @@
                     <li >Utilized React's <bold>JSK syntax extension, routing,</bold> and <bold>state management</bold> to optimize construction and user interface.</li>
                   </ul>  
                     <div class="projLink"> 
-                      <a href="https://liftmaster-3d0d7.web.app/" target="_blank" rel="noopener noreferrer">
+                      <a href="https://personal-website-949b8.web.app/" target="_blank" rel="noopener noreferrer">
                       <i class="fa fa-link" ></i><label>Link</label>
+                    </a>
+
                     </div> 
                   </a> 
                     <div class="projLink">
                       <a href="https://github.com/Calvin-Yap/liftmaster-pricing" target="_blank" rel="noopener noreferrer">
 
                       <i class="fa fa-github" ></i><label>Github</label>
+                    </a>
                     </div>
                   </a>
                 </div>
@@ -191,47 +197,133 @@
         </div>      
       </div>
     </div>      
-    
-    <div class="extraproj">
+    <div id="extraProjects"></div>
+    <div  class="extraproj">
       <div class="container-fluid overflow-hidden">
         <div class="row  justify-content-center  ">
           <div id="subheadings" class="col-9 ">
             <h1 class="title">Class Projects & Hackathons </h1> <p class="emoji">🛠</p> <p class="help">{Click on the Dots!}</p>
             <div class="row justify-content-center">
-              <div class="col-xl-3 col-lg-12 col-md-12 col-sm-12">
+              <div class="col-xl-3  col-lg-4 col-md-6 col-sm-6">
                 <div class="projectbox">
-                  <img class="extraImg" src="assets/GroceryCart.jpg" alt="GroceryCart.java">
-                   <div class="arrow" id="arrow-one"><i  class="fa fa-plus"></i></i></div>
+                  <img class="extraImg" src="assets/planyourtravelmock.jpg" alt="Planyourtravel.webdev">
+                  <div class="arrow" id="arrow-one"><i   id="icon" class="fa fa-ellipsis-h"></i></i></div>
+                  <h1>Plan Your Travel</h1>
+                  <div class="overlay1">
+                    <h2>Plan Your Travel</h2>
+                    <ul>
+                      <li>An AngularJS application created for Web Applications (CPS 630).</li>
+                      <li>A multiple iteration project, showcasing the progression from a HTML based travel website to a complete full-stack web application.</li>
+                      <li>Project tools: AngularJS, PHP, Angular Google Maps, MySQL</li>
+                    </ul>
+                    <a href="https://github.com/Calvin-Yap/CPS630-Project" target="_blank" rel="noopener noreferrer"><i class="fa fa-github" ></i><label>Github</label></a>
+                  </div>
                 </div>
               </div>
-              <div class="col-xl-3  col-lg-12 col-md-12 col-sm-12">
+              <div class="col-xl-3  col-lg-4 col-md-6 col-sm-6">
                 <div class="projectbox">
                   <img class="extraImg" src="assets/bash.jpg" alt="bash.script">
-                  <div class="arrow" id="arrow-one"><i  id="icon" class="fa fa-plus"></i></i></div>
+                  <div class="arrow" id="arrow-one"><i  id="icon" class="fa fa-ellipsis-h"></i></i></div>
+                  <h1>Bash Fibonacci</h1>
+                  <div class="overlay1">
+                    <h2>Bash Fibonacci</h2>
+                    <ul>
+                      <li>A bash shell script program completed for Introduction to Unix, C, and C++ (CPS 393).</li>
+                      <li>Demonstrates the difference in speed when calculating Fibonacci sequence by using recursion versus storing previous values (dynamic programing).</li>
+                    </ul>
+                    <a href="https://github.com/Calvin-Yap/Bash-Fibonacci" target="_blank" rel="noopener noreferrer"><i class="fa fa-github" ></i><label>Github</label></a>
+                  </div>
                 </div>
               </div>
-              <div class="col-xl-3  col-lg-12 col-md-12 col-sm-12">
+              <div class="col-xl-3  col-lg-4 col-md-6 col-sm-6">
                 <div class="projectbox">
                   <img class="extraImg" src="assets/IntervalUnion.jpg" alt="IntervalUnion.java">
-                  <div class="arrow" id="arrow-one"><i  id="icon" class="fa fa-plus"></i></i></div>
+                  <div class="arrow" id="arrow-one"><i  id="icon" class="fa fa-ellipsis-h"></i></i></div>
+                  <h1>Interval Union</h1>
+                  <div class="overlay1">
+                    <h2>Interval Union</h2>
+                    <ul>
+                      <li>A Java assignment completed for Data Structures (CPS 305).</li>
+                      <li>Accurately calculates the union or intersection from any number of values. The running time of the program scored in the 90th percentile of the course.</li>
+                    </ul>
+                    <a href="https://github.com/Calvin-Yap/IntervalUnion" target="_blank" rel="noopener noreferrer"><i class="fa fa-github" ></i><label>Github</label></a>
+                  </div>
                 </div>
               </div>
-              <div class="col-xl-3  col-lg-12 col-md-12 col-sm-12">
+              <div class="col-xl-3  col-lg-4 col-md-6 col-sm-6">
                 <div class="projectbox">
                   <img class="extraImg" src="assets/Tracktor.jpg" alt="Tracktor.webdev">
-                  <div class="arrow" id="arrow-one"><i  id="icon" class="fa fa-plus"></i></i></div>
+                  <div class="arrow" id="arrow-one"><i  id="icon" class="fa fa-ellipsis-h"></i></i></div>
+                  <h1>Tracktor</h1>
+                  <div class="overlay1">
+                    <h2>Tracktor</h2>
+                    <ul>
+                      <li>A React based web application created during RU Hacks 2019.</li>
+                      <li>The aim of this project was to develop a platform where local product producers are able to connect to a wide range of new customers in their surrounding areas. </li>
+                    </ul>
+                    <a href="https://github.com/Calvin-Yap/RuHacks" target="_blank" rel="noopener noreferrer"><i class="fa fa-github" ></i><label>Github</label></a>
+                  </div>
                 </div>
               </div>
-              <div class="col-xl-3  col-lg-12 col-md-12 col-sm-12">
+              <div class="col-xl-3  col-lg-4 col-md-6 col-sm-6">
                 <div class="projectbox">
-                  <img class="extraImg" src="assets/food4kids.jpg" alt="book">
-                  <div class="arrow" id="arrow-one"><i  id="icon"class="fa fa-plus"></i></i></div>
+                  <img class="extraImg" src="assets/food4kidsmock.jpg" alt="food4kids.webdev">
+                  <div class="arrow" id="arrow-one"><i  id="icon"class="fa fa-ellipsis-h"></i></i></div>
+                  <h1>Food4Kids</h1>
+                  <div class="overlay1">
+                    <h2>Food4Kids</h2>
+                    <ul>
+                      <li>A  React based web application created during Delta Hacks 2019.</li>
+                      <li>This project was created to complete a challenge to create a new ecommerce website for the non-for profit food4kids organization.  </li>
+                    </ul>
+                    <a href="https://github.com/Calvin-Yap/Deltahacks-FoodApp" target="_blank" rel="noopener noreferrer"><i class="fa fa-github" ></i><label>Github</label></a>
+                  </div>
                 </div>
               </div>
-              <div class="col-xl-3  col-lg-12 col-md-12 col-sm-12">
+              <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
                 <div class="projectbox">
-                  <img class="extraImg" src="https://placeimg.com/640/480/animals" alt="book">
-                  <div class="arrow" id="arrow-one"><i   id="icon" class="fa fa-plus"></i></i></div>
+                  <img class="extraImg" src="assets/GroceryCart.jpg" alt="GroceryCart.java">
+                   <div class="arrow" id="arrow-one"><i  class="fa fa-ellipsis-h"></i></i></div>
+                   <h1>Grocery Cart</h1>
+                   <div class="overlay1">
+                     <h2>Grocery Cart</h2>
+                      <ul>
+                        <li>A Java GUI project completed for Computer Science II (CPS 209).</li>
+                        <li>Simulates an interactive grocery store and allows for users to add to cart, checkout, and scan nutritional facts.</li>
+                      </ul>
+  
+                     <a href="https://github.com/Calvin-Yap/GroceryApp" target="_blank" rel="noopener noreferrer"><i class="fa fa-github" ></i><label>Github</label></a>
+                   </div>
+                </div>
+              </div>              
+              <div class="col-xl-3  col-lg-4 col-md-6 col-sm-6">
+                <div class="projectbox">
+                  <img class="extraImg" src="assets/pokedexMock.jpg" alt="Planyourtravel.webdev">
+                  <div class="arrow" id="arrow-one"><i   id="icon" class="fa fa-ellipsis-h"></i></i></div>
+                  <h1>Pokedex Android</h1>
+                  <div class="overlay1">
+                    <h2>Pokedex Android</h2>
+                    <ul>
+                      <li>Part of an MLH coding tutorial and my first experience with Android Studio.</li>
+                      <li>A mobile app pokedex that fetches data from an Algolia database, display’s a pokemon’s name, type, and weaknesses.</li>
+                    </ul>
+                    <a href="https://github.com/Calvin-Yap/CPS630-Project" target="_blank" rel="noopener noreferrer"><i class="fa fa-github" ></i><label>Github</label></a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-3  col-lg-4 col-md-6 col-sm-6">
+                <div class="projectbox">
+                  <img class="extraImg" src="assets/cps510mock.jpg" alt="Planyourtravel.webdev">
+                  <div class="arrow" id="arrow-one"><i   id="icon" class="fa fa-ellipsis-h"></i></i></div>
+                  <h1>Cloths DB</h1>
+                  <div class="overlay1">
+                    <h2>Cloths DB</h2>
+                    <ul>
+                      <li>A Java GUI project completed for Database Systems I (CPS 510).</li>
+                      <li>It is an interface that allows users to manage the database of a clothing store. It connects to the SQL database using JDBC and displays all admin tables.</li>
+                    </ul>
+                    <a href="https://github.com/Calvin-Yap/cps510-Final" target="_blank" rel="noopener noreferrer"><i class="fa fa-github" ></i><label>Github</label></a>
+                  </div>
                 </div>
               </div>
           </div>  
@@ -241,14 +333,9 @@
     </div>
 
 
-<script>
-$(document).ready(function(){
-  $(".overlay, #overlaybox").hide();
-  $('#back').hide();
-});
-</script>
-       
+<div id="aboutscroll"></div>
     <div class="container-fluid">
+      <div class="aboutsection">
       <div class="row justify-content-center">
       <div class="col-9">
 
@@ -261,57 +348,80 @@ $(document).ready(function(){
                 </h1>
             </div>
           </div>
-          <div class="row">
-            <div class="col-4">
+          <br/>
+            
+              <div class="row">
+           <div class="col-xl-2 col-lg-2 col-md-3 col-sm-3 col-0">
+             <h1 class="svgtext">This is me!</h1>
+            <svg  viewBox="0 0 200 350" preserveAspectRatio="none" >
+
+              <path d="M 50 50 Q 50 150 50 150 Q 50 200 150 200 L 200 200 L 150 175 L 150 225 L 200 200  " fill="none" stroke="black"  marker-end="url(#pointer)"/>        
+            </svg>
+           </div>
+            <div class="col-xl-4 col-lg-4 col-md-7 col-sm-7 col-12" >
+
               <div class="slider">
                 <div class="slider-outer">
-                  <!--<img src="assets/arrow.png" class="prev" alt="Prev">-->
-                  <h1 class="prev">prev</h1>
+                  
+                  <h1 class="prev"> <i class="fa fa-angle-left" style="font-size:48px;color:white"></i></h1>
+                  
                   <div class="slider-inner">
                     <img src="assets/1.jpg" id="first" class="active" alt="main">
-                    <img src="assets/2.jpg" alt="main">
-                    <img src="assets/3.jpg" alt="main">
+                    <img src="assets/2.jpg" id="second" alt="main">
+                    <img src="assets/3.jpg" id ="thrid" alt="main">
                     <img src="assets/4.jpg" id ="last" alt="main">
                   </div>
-                  <h1 class="next">next</h1>
-                  <!--<img src="assets/arrow.png" class="next" alt="Next">-->
+                  <h1 class="next"><i class="fa fa-angle-right" style="font-size:48px;color:white"></i></h1>
+                  
+                  
                 </div>
+                <p id="aboutImageHeading">My Trip to LA</p>
               </div>
+              
             </div>
+            <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
+              <h1 class="aboutTitle">The Short</h1>
+              <p>I am a fourth year Computer Science student studying at Ryerson University. In terms of my studies I am currently interested in the fields of artificial intelligence, data sciences, and software development. My dream job would be working as a software developer, creating programs that help benefit society or helps to make meaningful changes to people’s lives. As for myself, I am always eager and excited to learn new things and create new projects. In my spare time you can find me sharpening on my CS skills, practicing martial arts, playing Frisbee, or working out.
+
+              </p>
+            </div>
+
+            <div class="col-12"> 
+              <h1 class="aboutTitle">The Long</h1>
+              <p>Here you can read more about me or browse some other achievements.</p>
+              <h1 class="aboutTitle">Education</h1>
+              <p>I will be expected to graduate from Ryerson University in the <b>Spring 2021</b> semester. Throughout my education I have learned many coding languages as well as core concepts such as the project lifecycle, data structures, algorithms, networks, and operating systems. For my final semester I wanted to take courses to broaden my skills in different computing areas. To do so, I am enrolled in Software Tools for Startups, Creating Big Data Systems, Software Project Management, and Virtual Reality.   </p>
+              <p>Some projects I am currently working on are: iOS versions for both my LiftMaster App and Kiosk App written in Swift. A time slot booking application in Angular and Typescript </p>
+              <p>Currently, I am looking for an <b>Internship Position </b> or <b>Full-Time Employment</b> post graduation.</p>
+              <h1 class="aboutTitle">Goals</h1>
+              <p>I always like to set goals for myself to track personal progress and try to achieve bigger feats! For this term I had several academic and personal goals.</p>
+              <ul>
+                <li>Update some of my Github Repo readme's to include better descriptions.</li>
+                <li>Look for any job opportunities for the Summer of 2021.</li>
+                <li>Learn the basics of Swift and apply it a simple weather iOS app.</li>
+              </ul>
+              <h1 class="aboutTitle">Experience</h1>
+              <p>Currently I am working part-time for<b> Northern Karate Markham </b> where I:</p>
+              <ul>
+                <li>Bring in a new dynamic of high energy classes that engages the students in a positive learning environment, which increases the development speed of students by 25% and overall class attendance by 30%.</li>
+                <li>Am in charge of the organization of large classes that maximize the use of all resources and to ensure a high level of efficiency at all times.                </li>
+                <li>Utilize strong interpersonal and communication skills to instruct students of all levels.                </li>
+              </ul>
+              <p>Working here has taught me values in <b> team collaboration, public speaking, improvisation, and problem solving.</b></p>
+
+            </div>
+          </div>
           </div>
         </div>
 
       </div>
-
-
-
-      
-        
-
     </div>
-    <div style="margin-top: 2000px;">
-      test
-      </div>
-
-      <div class="small">
-        test
-        test
-        test
-        test
-        test
-      </div>
-
-      <div>
-
-
-        
-      </div>
-<script>
-
-
-</script>
 
 
   </body>
+  <footer>
+    <p>© 2020 Calvin Yap</p>
+    <p>All Mockups are for personal use and can be found on <a href="https://www.freepik.com/"  target="_blank" rel="noopener noreferrer">freepik.com</a></p>
 
+  </footer>
 </html>
